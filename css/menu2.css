@@ -15,7 +15,7 @@ html {
     /*ナビのスタート位置と形状*/
   top:0;
     left: -120%;
-  width:300px;
+  width:500px;
     height: 100vh;/*ナビの高さ*/
     backdrop-filter: blur(12px);
     background:rgba(150,150,150,0.5);
