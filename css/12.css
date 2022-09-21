@@ -1,0 +1,30 @@
+body,
+html {
+  height: 100vh;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
+
+/*固定する背景*/
+div {
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 5rem;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  height: 80vh;
+  padding: 5%;
+}
+
+.parallax-bg {
+  background-image: url("../images/12.jpg");
+  height: auto;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: contain;
+  padding-top: 25%;
+  background-repeat: no-repeat;
+}
