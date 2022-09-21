@@ -28,7 +28,7 @@
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
     z-index: 999;
-    width:80vw;
+    width:800px;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -40,7 +40,7 @@
     position: absolute;
     z-index: 999;
     top:15vh;
-    left:17vw;
+    left:150px;
     transform: translate(-50%,-50%);
 }
 
