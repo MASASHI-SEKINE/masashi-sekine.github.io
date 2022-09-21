@@ -17,7 +17,8 @@ html {
     left: -120%;
   width:40vw;
     height: 100vh;/*ナビの高さ*/
-  background:#999;
+    backdrop-filter: blur(12px);
+    background:rgba(255,255,255,0.2);
     /*動き*/
   transition: all 0.4s;
 }
@@ -158,9 +159,4 @@ section{
 
 section:nth-child(2n){
   background:#f3f3f3;
-}
-
-#footer{
-  background:#333;
-  padding:20px;
 }
