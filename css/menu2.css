@@ -1,7 +1,13 @@
 @charset "utf-8";
 
 /*========= ナビゲーションのためのCSS ===============*/
-
+body,
+html {
+  height: 70%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
     position:fixed;
