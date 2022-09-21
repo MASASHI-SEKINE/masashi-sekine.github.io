@@ -57,7 +57,6 @@
   padding:10px;
   font-size:25%;
   display: block;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
 }
@@ -148,16 +147,12 @@ section:nth-child(2n){
   background:#f3f3f3;
 }
 
-/* 001 */
-.button001 a {
-  position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
-  top:10px;
-  border-radius: 3px;
-  right: 100px;
-  cursor: pointer;
-    width: 30px;
-    height:30px;
-    transition: 0.3s ease-in-out;
-    font-weight: 500;
+.fixed_btn
+{
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 6px 40px;
+  background:rgba(150,150,150,0.5);
+  backdrop-filter: blur(12px);
 }
