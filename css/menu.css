@@ -160,6 +160,7 @@ section:nth-child(2n){
 .fixed_name
 {
   position: fixed;
+  font-size:20px;
   color:#000;
   top: 15px;
   left: 40px;
