@@ -1,6 +1,13 @@
 @charset "utf-8";
 
 /*========= ナビゲーションのためのCSS ===============*/
+body,
+html {
+  height: 70%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 15px;
+}
 
 #g-nav{
     /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
@@ -39,7 +46,7 @@
     /*ナビゲーション天地中央揃え*/
     position: absolute;
     z-index: 999;
-    top:15vh;
+    top:23vh;
     left:180px;
     transform: translate(-50%,-50%);
 }
@@ -55,7 +62,7 @@
   color: #333;
   text-decoration: none;
   padding:10px;
-  font-size:25%;
+  font-size:118%;
   display: block;
   letter-spacing: 0.1em;
   font-weight: bold;
@@ -68,8 +75,8 @@
   top:10px;
   left: 10px;
   cursor: pointer;
-    width: 30px;
-    height:30px;
+    width: 50px;
+    height:50px;
 }
 
 /*×に変化*/
@@ -120,6 +127,7 @@
 
 h1{
   font-size:1.2rem;
+  font-size: 30px;
 }
 
 h2{
