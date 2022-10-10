@@ -1,4 +1,4 @@
-@media (min-width:769px) {
+@media screen and (min-width:481px) {
   .masapc {
     display: block;
     background-image: url("../images/masa.jpg");
@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width:768px) {
+@media screen and (max-width:480px) {
   .masasp {
     background-image: url("../images/masa.jpg");
     height: 300px;
