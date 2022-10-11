@@ -1,19 +1,11 @@
-@media screen and (min-width:481px) {
+@media screen and (min-width:701px) {
   .masapc {
-    display: block;
     background-image: url("../images/masa.jpg");
-    object-fit: fill;
     height: 250px;
-    background-position: 0px;
+    background-position: 0;
     background-attachment: scroll;
     background-size: contain;
     background-repeat: no-repeat;
-    pointer-events: none;
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-touch-callout:none;
-    -moz-user-select:none;
-    user-select:none;
   }
   h1pc {
     font-size:30px;
@@ -25,7 +17,7 @@
   }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:700px) {
   .masasp {
     background-image: url("../images/masa.jpg");
     height: 200px;
@@ -33,11 +25,4 @@
     background-position: right 50%  bottom 20px;
     background-size: contain;
     background-repeat: no-repeat;
-    pointer-events: none;
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-touch-callout:none;
-    -moz-user-select:none;
-    user-select:none;
-  }
 }
