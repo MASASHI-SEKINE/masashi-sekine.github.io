@@ -3,8 +3,7 @@
     display: block;
     background-image: url("../images/masa.jpg");
     object-fit: fill;
-    height: 350px;
-    width: 870px;
+    height: 250px;
     background-position: 0px;
     background-attachment: scroll;
     background-size: contain;
@@ -19,17 +18,17 @@
   h1pc {
     font-size:30px;
     font-weight:bold;
-    margin-left:400px
+    margin-left:300px
   }
   ppc {
-    margin-left:400px
+    margin-left:300px
   }
 }
 
 @media screen and (max-width:480px) {
   .masasp {
     background-image: url("../images/masa.jpg");
-    height: 300px;
+    height: 200px;
     background-attachment: scroll;
     background-position: right 50%  bottom 20px;
     background-size: contain;
