@@ -1,7 +1,7 @@
 @media screen and (min-width:701px) {
   .masapc {
-    background-image: url("../images/masa.jpg");
-    height: 250px;
+    background-image: url("../images/masa.png");
+    height: 300px;
     background-position: 0;
     background-attachment: scroll;
     background-size: contain;
