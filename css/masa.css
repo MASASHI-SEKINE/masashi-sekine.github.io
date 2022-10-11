@@ -1,6 +1,6 @@
 @media screen and (min-width:701px) {
   .masapc {
-    background-image: url("../images/masa.png");
+    background-image: url("../images/masapc.png");
     height: 300px;
     background-position: 0;
     background-attachment: scroll;
@@ -19,10 +19,11 @@
 
 @media screen and (max-width:700px) {
   .masasp {
-    background-image: url("../images/masa.jpg");
-    height: 200px;
+    background-image: url("../images/masasp.png");
+    height: 250px;
+    width: auto;
     background-attachment: scroll;
-    background-position: right 50%  bottom 20px;
+    background-position: right 50%  bottom 0px;
     background-size: contain;
     background-repeat: no-repeat;
 }
