@@ -5,15 +5,28 @@ html {
   letter-spacing: 2px;
   font-size: 15px;
 }
-
-
+@media screen and (min-width:701px) {
 .parallax-bg {
   background-image: url("../images/09.jpg");
   height: auto;
-  width: 100%;
+  width: auto;
   background-attachment: fixed;
   background-position: top;
   background-size: contain;
-  padding-top: 35%;
+  padding-top: 25%;
   background-repeat: no-repeat;
+}
+}
+
+@media screen and (max-width:700px) {
+  .parallax-bgsp {
+    background-image: url("../images/09sp.jpg");
+    height: 30%;
+    width: auto;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: contain;
+    padding-top: 25%;
+    background-repeat: no-repeat;
+  }
 }
