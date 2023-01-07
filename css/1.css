@@ -9,7 +9,7 @@ html {
 .parallax-bg {
   background-image: url("../images/01.jpg");
   height: auto;
-  width: 100%;
+  width: auto;
   background-attachment: fixed;
   background-position: top;
   background-size: contain;
