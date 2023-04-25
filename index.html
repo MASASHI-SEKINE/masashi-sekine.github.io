@@ -15,9 +15,23 @@ document.write("<link rel='stylesheet' type='text/css' href=css/", month, ".css>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="css/menu.css">
 <link rel="stylesheet" type="text/css" href="css/masa.css">
+<style>
+  .header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background:rgba(250, 250, 250, 0.6);
+    backdrop-filter: blur(12px);
+    padding: 1%;
+  }
+</style>
 </head>
 
 <body>
+  <div class="header">
+    <div class="fixed_name" style="font-size:20px">MENU</div>
+  </div>
 <div class="parallax-bgsp"><span></div>
 <div class="parallax-bg"><span></div>
 <a href="./En/index.html"><button class="fixed_btn">English Page</button></a>
@@ -32,7 +46,7 @@ document.write("<link rel='stylesheet' type='text/css' href=css/", month, ".css>
 </ul>
 </div>
 </nav>
-<div class="fixed_name" style="font-size:20px">SEKINE, Masashi</div>
+
   <main id="main">
     <section>
       <div class="masasp"><span></div>
