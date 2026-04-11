@@ -9,7 +9,7 @@
 
 <body>
 
-<nav class="site-nav light" id="site-nav">
+<nav class="site-nav" id="site-nav">
   <a href="./index.html" class="nav-logo">Masashi Sekine</a>
   <ul class="nav-links">
     <li><a href="./index.html">Home</a></li>
@@ -31,7 +31,7 @@
 </div>
 
 <div class="page-header">
-  <span class="page-header-label">Academic Work</span>
+  <!-- <span class="page-header-label">Academic Work</span> -->
   <h1>Research</h1>
 </div>
 
@@ -143,12 +143,14 @@
   }, { threshold: 0.1 });
   animEls.forEach(function(el) { observer.observe(el); });
 
-  document.getElementById('hamburger').addEventListener('click', function() {
-    document.getElementById('mobile-nav').classList.add('open');
-  });
-  document.getElementById('mobile-nav-close').addEventListener('click', function() {
-    document.getElementById('mobile-nav').classList.remove(   'open');
-  });
+  var hamburger = document.getElementById('hamburger');
+  var mobileNav = document.getElementById('mobile-nav');
+  function toggleNav() {
+    var open = mobileNav.classList.toggle('open');
+    hamburger.classList.toggle('active', open);
+  }
+  hamburger.addEventListener('click', toggleNav);
+  document.getElementById('mobile-nav-close').addEventListener('click', toggleNav);
 </script>
 </body>
 </html>

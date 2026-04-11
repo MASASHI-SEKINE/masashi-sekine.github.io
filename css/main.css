@@ -257,6 +257,9 @@ body {
 .page-header {
   padding: 140px 60px 80px;
   background: var(--dark);
+  background-image: url('../images/cover.jpg');
+  background-size: cover;
+  background-position: center;
   position: relative;
   overflow: hidden;
 }
@@ -264,9 +267,13 @@ body {
 .page-header::before {
   content: '';
   position: absolute;
-  top: -60px; right: -60px;
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(52,81,199,0.12) 0%, transparent 70%);
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(8, 8, 20, 0.78) 0%,
+    rgba(8, 8, 20, 0.52) 50%,
+    rgba(8, 8, 20, 0.28) 100%
+  );
   pointer-events: none;
 }
 
@@ -276,8 +283,10 @@ body {
   font-weight: 500;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: rgba(255, 255, 255, 0.85);
   margin-bottom: 14px;
+  position: relative;
+  z-index: 1;
 }
 
 .page-header h1 {
@@ -285,6 +294,8 @@ body {
   font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 300;
   color: #fff;
+  position: relative;
+  z-index: 1;
   letter-spacing: 0.03em;
 }
 
@@ -684,6 +695,19 @@ body {
     height: 1.5px;
     background: rgba(255,255,255,0.7);
     transition: all var(--transition);
+    transform-origin: center;
+  }
+
+  /* X shape when active */
+  .nav-hamburger.active span:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg);
+  }
+  .nav-hamburger.active span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+  }
+  .nav-hamburger.active span:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg);
   }
 
   .mobile-nav {
