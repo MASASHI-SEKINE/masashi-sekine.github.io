@@ -1,81 +1,131 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
-<script type="text/javascript">
-<!--
-var today = new Date();
-var month = today.getMonth() + 1;
-document.write("<link rel='stylesheet' type='text/css' href=../css/", month, ".css>");
-// -->
-</script>
 <meta charset="utf-8">
-<title>関根 雅のHP</title>
-
+<title>Masashi Sekine</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="../css/menu.css">
-<link rel="stylesheet" type="text/css" href="../css/masa.css">
-<style>
-  .header {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 40px;
-    background:rgba(250, 250, 250, 0.6);
-    backdrop-filter: blur(12px);
-    padding: 1%;
-  }
-</style>
-<style>
-  .center{
-    width: 100%;
-    max-width: 1280px;
-    margin: auto;
-  }
-</style>
+<link rel="stylesheet" href="../css/main.css">
+<script>
+  (function() {
+    var m = new Date().getMonth() + 1;
+    var pad = m < 10 ? '0' : '';
+    document.addEventListener('DOMContentLoaded', function() {
+      var bg = document.getElementById('hero-bg');
+      if (bg) bg.style.backgroundImage = "url('../images/" + pad + m + ".jpg')";
+    });
+  })();
+</script>
 </head>
 
 <body>
-  <div class="header">
-    <div class="fixed_name" style="font-size:20px">MENU</div>
-  </div>
-<a href="../index.html"><button class="fixed_btn">日本語ページ</button></a>
-<div class="openbtn1"><span></span><span></span><span></span></div>
-<nav id="g-nav">
-<div id="g-nav-list">
-<ul>
-<li><a href="./index.html">HOME</a></li>
-<li><a href="./profile_en.html">Curriculum Vitae</a></li>
-<li><a href="./research_en.html">Research</a></li>
 
-</ul>
-</div>
-</nav>
-<div class="parallax-bgsp"><span></div>
-<div class="parallax-bg"><span></div>
-  <div class="center">
-  <main id="main">
-    <section>
-      <div class="masasp"><span></div>
-      <div class="masapc">
-        <h1><h1pc>SEKINE, Masashi</h1pc></h1>
-        <p><ppc></ppc></p>
-        <br>
-        <h1><h1pc>Research Interests</h1pc></h1>
-        <p><ppc>Mean Field Game Theory</ppc></p>
-        <p><ppc>Mathematical Finance</ppc></p>
-        <br>
-        <h1><h1pc>E-mail</h1pc></h1>
-        <p><ppc></ppc></p>
-        <br>
-        <h1><h1pc>Related Links</h1pc></h1>
-        <p><ppc></ppc>[<a href="https://researchmap.jp/SekineMasashi?lang=en">researchmap</a>]</ppc></p>
-        <p><ppc></ppc>[<a href="https://scholar.google.com/citations?hl=en&user=iIHNPTUAAAAJ">Google Scholar</a>]</ppc></p>
-        <p><ppc></ppc>[<a href="https://orcid.org/0009-0002-5042-9895">ORCID</a>]</ppc></p>
-        <br>
-      </div>
-    </section>
+<!-- Navigation -->
+<nav class="site-nav" id="site-nav">
+  <a href="./index.html" class="nav-logo">Masashi Sekine</a>
+  <ul class="nav-links">
+    <li><a href="./index.html" class="active">Home</a></li>
+    <li><a href="./profile_en.html">CV</a></li>
+    <li><a href="./research_en.html">Research</a></li>
+  </ul>
+  <a href="../index.html" class="nav-lang">JA</a>
+  <div class="nav-hamburger" id="hamburger">
+    <span></span><span></span><span></span>
   </div>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-<script src="../js/index.js"></script>
+</nav>
+
+<div class="mobile-nav" id="mobile-nav">
+  <button class="mobile-nav-close" id="mobile-nav-close">×</button>
+  <a href="./index.html">Home</a>
+  <a href="./profile_en.html">CV</a>
+  <a href="./research_en.html">Research</a>
+  <a href="../index.html" style="font-size:16px;color:rgba(255,255,255,0.4);margin-top:12px;">日本語</a>
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg" id="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-photo">
+    <img src="../images/masapc.png" alt="Masashi Sekine">
+  </div>
+  <div class="hero-photo-sp">
+    <img src="../images/masasp.png" alt="Masashi Sekine">
+  </div>
+
+  <div class="hero-content">
+    <span class="hero-eyebrow">Researcher · Mathematical Finance</span>
+    <h1 class="hero-name" style="font-family:'Inter',sans-serif;font-size:clamp(2.4rem,5vw,4.2rem);letter-spacing:0.02em;">SEKINE, Masashi</h1>
+    <p class="hero-name-en" style="font-family:'Noto Serif JP',serif;">関根 雅</p>
+    <div class="hero-fields">
+      <span class="hero-tag">Mean Field Game Theory</span>
+      <span class="hero-tag">Mathematical Finance</span>
+    </div>
+    <div class="hero-links">
+      <a href="https://researchmap.jp/SekineMasashi?lang=en" class="hero-link" target="_blank" rel="noopener">researchmap</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=iIHNPTUAAAAJ" class="hero-link" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://orcid.org/0009-0002-5042-9895" class="hero-link" target="_blank" rel="noopener">ORCID</a>
+    </div>
+  </div>
+</section>
+
+<!-- Info Cards -->
+<div class="home-info">
+  <div class="home-info-grid">
+
+    <div class="info-block" data-animate>
+      <div class="section-title">About</div>
+      <p>I am a researcher working on Mean Field Game Theory and Mathematical Finance.</p>
+    </div>
+
+    <div class="info-block" data-animate style="transition-delay:0.1s">
+      <div class="section-title">Research Interests</div>
+      <p>Mean Field Game Theory<br>Mathematical Finance</p>
+    </div>
+
+    <div class="info-block" data-animate style="transition-delay:0.15s">
+      <div class="section-title">Links</div>
+      <p>
+        <a href="https://researchmap.jp/SekineMasashi?lang=en" target="_blank" rel="noopener">researchmap</a><br>
+        <a href="https://scholar.google.com/citations?hl=en&user=iIHNPTUAAAAJ" target="_blank" rel="noopener">Google Scholar</a><br>
+        <a href="https://orcid.org/0009-0002-5042-9895" target="_blank" rel="noopener">ORCID</a>
+      </p>
+    </div>
+
+    <div class="info-block" data-animate style="transition-delay:0.2s">
+      <div class="section-title">Contact</div>
+      <p>Please see researchmap for contact information.</p>
+    </div>
+
+  </div>
+</div>
+
+<footer class="site-footer">
+  &copy; Masashi Sekine
+</footer>
+
+<script>
+  var nav = document.getElementById('site-nav');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > window.innerHeight - 80) {
+      nav.classList.add('light');
+    } else {
+      nav.classList.remove('light');
+    }
+  });
+
+  var animEls = document.querySelectorAll('[data-animate]');
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.15 });
+  animEls.forEach(function(el) { observer.observe(el); });
+
+  document.getElementById('hamburger').addEventListener('click', function() {
+    document.getElementById('mobile-nav').classList.add('open');
+  });
+  document.getElementById('mobile-nav-close').addEventListener('click', function() {
+    document.getElementById('mobile-nav').classList.remove('open');
+  });
+</script>
 </body>
 </html>
